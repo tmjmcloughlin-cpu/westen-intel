@@ -85,7 +85,7 @@ function Pagination({ page, total, pageSize, onChange }: {
             className="w-8 h-8 text-xs transition-colors"
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              backgroundColor: p === page ? 'oklch(0.65 0.22 38)' : 'transparent',
+              backgroundColor: p === page ? 'oklch(0.62 0.22 220)' : 'transparent',
               color: p === page ? '#0a0f1e' : 'rgba(255,255,255,0.4)',
               fontWeight: p === page ? 700 : 400,
             }}
@@ -160,7 +160,7 @@ export default function ThemePage() {
         <div className="text-center">
           <p className="text-white/30 mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>Dossier not found.</p>
           <Link href="/">
-            <span className="text-xs hover:underline" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.65 0.22 38)' }}>
+            <span className="text-xs hover:underline" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.62 0.22 220)' }}>
               ← Return to base
             </span>
           </Link>
@@ -183,7 +183,7 @@ export default function ThemePage() {
             </div>
           </Link>
           <div className="flex items-center gap-3">
-            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.65 0.22 38)' }} />
+            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.62 0.22 220)' }} />
             <span className="text-white font-bold tracking-widest text-sm uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em' }}>
               Westen Intel
             </span>
@@ -265,13 +265,13 @@ export default function ThemePage() {
             style={{
               fontFamily: "'JetBrains Mono', monospace",
               borderColor: showFilters || hasFilters ? 'oklch(0.65 0.22 38 / 60%)' : 'rgba(255,255,255,0.1)',
-              color: showFilters || hasFilters ? 'oklch(0.65 0.22 38)' : 'rgba(255,255,255,0.4)',
+              color: showFilters || hasFilters ? 'oklch(0.62 0.22 220)' : 'rgba(255,255,255,0.4)',
             }}
           >
             <Filter size={12} />
             Filter
             {hasFilters && (
-              <span className="ml-1 text-xs w-4 h-4 flex items-center justify-center font-bold" style={{ backgroundColor: 'oklch(0.65 0.22 38)', color: '#0a0f1e' }}>
+              <span className="ml-1 text-xs w-4 h-4 flex items-center justify-center font-bold" style={{ backgroundColor: 'oklch(0.62 0.22 220)', color: '#0a0f1e' }}>
                 !
               </span>
             )}
@@ -328,7 +328,7 @@ export default function ThemePage() {
               <button
                 onClick={clearFilters}
                 className="mt-4 text-xs hover:underline"
-                style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.65 0.22 38)' }}
+                style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.62 0.22 220)' }}
               >
                 Clear filters
               </button>

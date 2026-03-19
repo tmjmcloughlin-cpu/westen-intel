@@ -228,7 +228,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/8" style={{ backgroundColor: 'rgba(10,15,30,0.92)' }}>
         <div className="container flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.65 0.22 38)' }} />
+            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.62 0.22 220)' }} />
             <span className="text-white font-bold tracking-widest text-sm uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em' }}>
               Westen Intel
             </span>
@@ -273,7 +273,7 @@ export default function Home() {
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-1 leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.04em' }}>
               WESTEN
             </h1>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.04em', color: 'oklch(0.65 0.22 38)' }}>
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.04em', color: 'oklch(0.62 0.22 220)' }}>
               INTEL
             </h1>
 
@@ -291,7 +291,7 @@ export default function Home() {
                 { label: "Episodes", value: "111" },
               ].map(stat => (
                 <div key={stat.label}>
-                  <div className="text-2xl font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'oklch(0.65 0.22 38)' }}>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'oklch(0.62 0.22 220)' }}>
                     {stat.value}
                   </div>
                   <div className="text-xs text-white/30 uppercase tracking-widest" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -305,7 +305,7 @@ export default function Home() {
             <a
               href="#dossiers"
               className="inline-flex items-center gap-2 font-bold px-6 py-3 text-sm uppercase tracking-widest transition-all hover:opacity-90"
-              style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em', backgroundColor: 'oklch(0.65 0.22 38)', color: '#0a0f1e' }}
+              style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em', backgroundColor: 'oklch(0.62 0.22 220)', color: '#fff' }}
             >
               Access Dossiers
               <ChevronRight size={16} />
@@ -345,7 +345,7 @@ export default function Home() {
         <div className="container">
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-3">
-              <div className="w-8 h-px" style={{ backgroundColor: 'oklch(0.65 0.22 38)' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'oklch(0.62 0.22 220)' }} />
               <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "'Bebas Neue', sans-serif', letterSpacing: '0.12em'", color: 'oklch(0.65 0.22 38 / 80%)' }}>
                 Intelligence Dossiers
               </span>

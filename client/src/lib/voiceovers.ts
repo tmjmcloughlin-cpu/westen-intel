@@ -22,23 +22,23 @@ export interface ThemeMeta {
   count: number;
 }
 
-// User's custom images
+// Dossier background images — Burn Notice show locations & characters
 export const THEME_IMAGES: Record<string, string> = {
-  "Surveillance & Tradecraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-night_3d87565a.png",
-  "Improvised Weapons & Gear": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-watch_02109c9a.png",
-  "Reading People": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-sunset_2a19fdc0.png",
-  "Cover Identities": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-london_af80924a.png",
-  "Staying Alive": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-night_3d87565a.png",
-  "The Long Con": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-watch_02109c9a.png",
-  "General Spycraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-sunset_2a19fdc0.png",
+  "Surveillance & Tradecraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-surveillance-LB6Cq9YHZY9a7nkF7nMMfM.webp",
+  "Improvised Weapons & Gear": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-weapons-a7N2vVapaiD59kAgGSc4TA.webp",
+  "Reading People": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-reading-people-MGLAwEmbPjzzyFxKeGgwmD.webp",
+  "Cover Identities": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-cover-cPFpFj2vx3VXwHe7hFFo7n.webp",
+  "Staying Alive": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-staying-alive-W6hsN5BDA2VT7bfe3xUNAT.webp",
+  "The Long Con": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-long-con-DopseE7kVujrcekd7JW6hK.webp",
+  "General Spycraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/dossier-spycraft-kwkuKdzyWhXEx8UNDHHETQ.webp",
 };
 
-// Miami Vice colour scheme per theme
+// Miami Blue colour scheme per theme
 export const THEME_COLOR_MAP: Record<string, { accent: string; badge: string; border: string }> = {
   "Surveillance & Tradecraft": {
-    accent: "text-teal-400",
-    badge: "bg-teal-900/30 text-teal-300 border-teal-600/40",
-    border: "border-teal-700/25"
+    accent: "text-sky-400",
+    badge: "bg-sky-900/30 text-sky-300 border-sky-600/40",
+    border: "border-sky-700/25"
   },
   "Improvised Weapons & Gear": {
     accent: "text-orange-400",
@@ -46,14 +46,14 @@ export const THEME_COLOR_MAP: Record<string, { accent: string; badge: string; bo
     border: "border-orange-700/25"
   },
   "Reading People": {
-    accent: "text-coral-400",
-    badge: "bg-rose-900/30 text-rose-300 border-rose-600/40",
-    border: "border-rose-700/25"
+    accent: "text-sky-300",
+    badge: "bg-sky-900/25 text-sky-200 border-sky-600/35",
+    border: "border-sky-700/20"
   },
   "Cover Identities": {
-    accent: "text-amber-400",
-    badge: "bg-amber-900/30 text-amber-300 border-amber-600/40",
-    border: "border-amber-700/25"
+    accent: "text-cyan-400",
+    badge: "bg-cyan-900/30 text-cyan-300 border-cyan-600/40",
+    border: "border-cyan-700/25"
   },
   "Staying Alive": {
     accent: "text-red-400",
@@ -61,14 +61,14 @@ export const THEME_COLOR_MAP: Record<string, { accent: string; badge: string; bo
     border: "border-red-700/25"
   },
   "The Long Con": {
-    accent: "text-cyan-400",
-    badge: "bg-cyan-900/30 text-cyan-300 border-cyan-600/40",
-    border: "border-cyan-700/25"
+    accent: "text-blue-400",
+    badge: "bg-blue-900/30 text-blue-300 border-blue-600/40",
+    border: "border-blue-700/25"
   },
   "General Spycraft": {
-    accent: "text-slate-300",
-    badge: "bg-slate-800/50 text-slate-300 border-slate-600/40",
-    border: "border-slate-600/25"
+    accent: "text-sky-400",
+    badge: "bg-sky-900/30 text-sky-300 border-sky-600/40",
+    border: "border-sky-700/25"
   },
 };
 

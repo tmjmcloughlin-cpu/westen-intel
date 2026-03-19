@@ -1,6 +1,6 @@
-/* Westen Intel — Miami Vice Palette
+/* Westen Intel — Miami Blue Palette
  * Design: Miami Sunset Noir
- * Bg: Deep Navy (#0a0f1e), Accent: Coral/Sunset (#FF6B35), Secondary: Teal (#00C9B1)
+ * Bg: Deep Navy (#0a0f1e), Accent: Miami Blue (#0EA5E9 / sky-500), Secondary: Coral (#FF6B35)
  * Headlines: Bebas Neue | Body/Quotes: DM Sans | Mono labels: JetBrains Mono
  */
 
@@ -48,6 +48,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Miami custom colours */
+  --miami-blue: oklch(0.62 0.22 220);
   --miami-coral: oklch(0.65 0.22 38);
   --miami-teal: oklch(0.75 0.18 185);
   --miami-gold: oklch(0.78 0.18 72);
@@ -64,32 +65,32 @@
   --card-foreground: oklch(0.95 0.005 265);
   --popover: oklch(0.15 0.04 265);
   --popover-foreground: oklch(0.95 0.005 265);
-  --primary: oklch(0.65 0.22 38);
-  --primary-foreground: oklch(0.08 0.01 265);
-  --secondary: oklch(0.75 0.18 185);
+  --primary: oklch(0.62 0.22 220);
+  --primary-foreground: oklch(0.98 0.005 220);
+  --secondary: oklch(0.65 0.22 38);
   --secondary-foreground: oklch(0.08 0.01 265);
   --muted: oklch(0.22 0.04 265);
   --muted-foreground: oklch(0.65 0.02 265);
-  --accent: oklch(0.65 0.22 38);
-  --accent-foreground: oklch(0.08 0.01 265);
+  --accent: oklch(0.62 0.22 220);
+  --accent-foreground: oklch(0.98 0.005 220);
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.65 0.22 38);
-  --chart-1: oklch(0.65 0.22 38);
-  --chart-2: oklch(0.75 0.18 185);
-  --chart-3: oklch(0.78 0.18 72);
-  --chart-4: oklch(0.55 0.18 290);
+  --ring: oklch(0.62 0.22 220);
+  --chart-1: oklch(0.62 0.22 220);
+  --chart-2: oklch(0.65 0.22 38);
+  --chart-3: oklch(0.75 0.18 185);
+  --chart-4: oklch(0.78 0.18 72);
   --chart-5: oklch(0.70 0.20 15);
   --sidebar: oklch(0.15 0.04 265);
   --sidebar-foreground: oklch(0.95 0.005 265);
-  --sidebar-primary: oklch(0.65 0.22 38);
-  --sidebar-primary-foreground: oklch(0.08 0.01 265);
+  --sidebar-primary: oklch(0.62 0.22 220);
+  --sidebar-primary-foreground: oklch(0.98 0.005 220);
   --sidebar-accent: oklch(0.22 0.04 265);
   --sidebar-accent-foreground: oklch(0.95 0.005 265);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.65 0.22 38);
+  --sidebar-ring: oklch(0.62 0.22 220);
 }
 
 @layer base {
