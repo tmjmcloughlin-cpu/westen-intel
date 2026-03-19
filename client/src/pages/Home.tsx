@@ -223,16 +223,26 @@ function GlobalSearch() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#0a0f1e' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#0e2a47' }}>
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/8" style={{ backgroundColor: 'rgba(10,15,30,0.92)' }}>
-        <div className="container flex items-center justify-between h-14">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/10" style={{ backgroundColor: 'rgba(10,35,65,0.95)' }}>
+        <div className="container flex items-center justify-between h-16">
           <Link href="/">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-intel-logo-UzKebTKpPCddRHm4kfyi9V.webp"
-              alt="Westen Intel"
-              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-            />
+            <div className="flex items-center gap-3 cursor-pointer hover:opacity-85 transition-opacity">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" stroke="#FF6B35" strokeWidth="2"/>
+                <circle cx="16" cy="16" r="7" stroke="#FF6B35" strokeWidth="1.5"/>
+                <circle cx="16" cy="16" r="2.5" fill="#FF6B35"/>
+                <line x1="16" y1="1" x2="16" y2="7" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="16" y1="25" x2="16" y2="31" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="1" y1="16" x2="7" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="25" y1="16" x2="31" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+              <div className="leading-none">
+                <span className="block text-white font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.35rem', letterSpacing: '0.12em' }}>WESTEN</span>
+                <span className="block font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.1rem', letterSpacing: '0.18em', color: '#FF6B35' }}>INTEL</span>
+              </div>
+            </div>
           </Link>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-4 text-xs text-white/40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -259,10 +269,10 @@ export default function Home() {
         />
         {/* Warm sunset gradient — left dark for text, right shows the image */}
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to right, rgba(10,15,30,0.97) 0%, rgba(10,15,30,0.88) 45%, rgba(10,15,30,0.45) 75%, rgba(10,15,30,0.15) 100%)'
+          background: 'linear-gradient(to right, rgba(10,35,65,0.97) 0%, rgba(10,35,65,0.88) 45%, rgba(10,35,65,0.45) 75%, rgba(10,35,65,0.15) 100%)'
         }} />
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to top, #0a0f1e 0%, transparent 50%)'
+          background: 'linear-gradient(to top, #0e2a47 0%, transparent 50%)'
         }} />
 
         <div className="container relative z-10 py-24">
@@ -323,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* SEARCH */}
-      <section className="py-12 border-b border-white/8" style={{ backgroundColor: '#0d1225' }}>
+      <section className="py-12 border-b border-white/10" style={{ backgroundColor: '#0b2540' }}>
         <div className="container">
           <div className="text-center mb-6">
             <p className="text-xs text-white/30 uppercase tracking-widest" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
@@ -335,7 +345,7 @@ export default function Home() {
       </section>
 
       {/* RANDOM QUOTE */}
-      <section className="py-12" style={{ backgroundColor: '#0a0f1e' }}>
+      <section className="py-12" style={{ backgroundColor: '#0e2a47' }}>
         <div className="container max-w-2xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px flex-1 bg-white/8" />
@@ -349,7 +359,7 @@ export default function Home() {
       </section>
 
       {/* THEME DOSSIERS */}
-      <section id="dossiers" className="py-16" style={{ backgroundColor: '#0a0f1e' }}>
+      <section id="dossiers" className="py-16" style={{ backgroundColor: '#0e2a47' }}>
         <div className="container">
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-3">
@@ -366,7 +376,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {themes.map(theme => (
               <ThemeCard key={theme.name} theme={theme} />
             ))}
@@ -375,17 +385,30 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/8 py-8" style={{ backgroundColor: '#080d1a' }}>
+      <footer className="border-t border-white/10 py-10" style={{ backgroundColor: '#081e36' }}>
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-1 h-4" style={{ backgroundColor: 'oklch(0.65 0.22 38 / 50%)' }} />
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ opacity: 0.4 }}>
+              <circle cx="16" cy="16" r="13" stroke="#FF6B35" strokeWidth="2"/>
+              <circle cx="16" cy="16" r="7" stroke="#FF6B35" strokeWidth="1.5"/>
+              <circle cx="16" cy="16" r="2.5" fill="#FF6B35"/>
+              <line x1="16" y1="1" x2="16" y2="7" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="31" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="1" y1="16" x2="7" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="25" y1="16" x2="31" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
             <span className="text-white/30 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               Westen Intel — Unofficial Burn Notice Archive
             </span>
           </div>
-          <p className="text-white/15 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-            All voiceovers © USA Network / Burn Notice. Fan site only.
-          </p>
+          <div className="flex flex-col items-center sm:items-end gap-1">
+            <p className="text-white/40 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Burn Notice, its characters and trademarks are ©USA Network.
+            </p>
+            <p className="text-white/20 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Fan site only. Not affiliated with USA Network or Matt Nix Productions.
+            </p>
+          </div>
         </div>
       </footer>
     </div>

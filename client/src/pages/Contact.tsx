@@ -10,10 +10,10 @@ import { Link } from "wouter";
 import { ArrowLeft, Send, Target, Star, Users, Pen } from "lucide-react";
 import { toast } from "sonner";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-intel-logo-UzKebTKpPCddRHm4kfyi9V.webp";
+// Logo now rendered as inline SVG
 const TOM_PHOTO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/tom-photo_8740342b.png";
 
-const navyCard = { backgroundColor: 'oklch(0.16 0.04 265)' };
+const navyCard = { backgroundColor: 'rgba(10,35,65,0.7)' };
 const navyBorder = { borderColor: 'oklch(1 0 0 / 10%)' };
 const miamiBlueFull = 'oklch(0.62 0.22 220)';
 const miamiBlueDim = 'oklch(0.62 0.22 220 / 20%)';
@@ -50,12 +50,26 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'oklch(0.12 0.04 265)', color: 'oklch(0.95 0.005 265)' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#0e2a47', color: 'oklch(0.95 0.005 265)' }}>
       {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border-b"
-        style={{ backgroundColor: 'oklch(0.10 0.04 265 / 95%)', backdropFilter: 'blur(12px)', borderColor: 'oklch(1 0 0 / 8%)' }}>
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 border-b"
+        style={{ backgroundColor: 'rgba(10,35,65,0.95)', backdropFilter: 'blur(12px)', borderColor: 'oklch(1 0 0 / 10%)', height: '64px' }}>
         <Link href="/">
-          <img src={LOGO_URL} alt="Westen Intel" className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity" />
+          <div className="flex items-center gap-3 cursor-pointer hover:opacity-85 transition-opacity">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="13" stroke="#FF6B35" strokeWidth="2"/>
+              <circle cx="16" cy="16" r="7" stroke="#FF6B35" strokeWidth="1.5"/>
+              <circle cx="16" cy="16" r="2.5" fill="#FF6B35"/>
+              <line x1="16" y1="1" x2="16" y2="7" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="16" y1="25" x2="16" y2="31" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="1" y1="16" x2="7" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="25" y1="16" x2="31" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            <div className="leading-none">
+              <span className="block text-white font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.35rem', letterSpacing: '0.12em' }}>WESTEN</span>
+              <span className="block font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.1rem', letterSpacing: '0.18em', color: '#FF6B35' }}>INTEL</span>
+            </div>
+          </div>
         </Link>
         <Link href="/">
           <span className="flex items-center gap-2 text-xs uppercase tracking-widest hover:opacity-70 transition-opacity"
@@ -339,11 +353,14 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t px-6 py-8 text-center" style={{ borderColor: 'oklch(1 0 0 / 8%)' }}>
-        <p className="text-xs" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.40 0.01 265)' }}>
-          WESTEN INTEL · A FAN ARCHIVE · NOT AFFILIATED WITH USA NETWORK OR MATT NIX PRODUCTIONS
+      <footer className="border-t px-6 py-10 text-center" style={{ borderColor: 'oklch(1 0 0 / 10%)', backgroundColor: '#081e36' }}>
+        <p className="text-xs" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.45 0.01 265)' }}>
+          Burn Notice, its characters and trademarks are ©USA Network.
         </p>
-        <p className="text-xs mt-2" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.35 0.01 265)' }}>
+        <p className="text-xs mt-1" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.35 0.01 265)' }}>
+          Westen Intel is a fan archive. Not affiliated with USA Network or Matt Nix Productions.
+        </p>
+        <p className="text-xs mt-2" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.30 0.01 265)' }}>
           Built with respect for everyone who made Burn Notice what it was.
         </p>
       </footer>

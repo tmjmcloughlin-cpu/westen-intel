@@ -86,7 +86,7 @@ function Pagination({ page, total, pageSize, onChange }: {
             style={{
               fontFamily: "'JetBrains Mono', monospace",
               backgroundColor: p === page ? 'oklch(0.62 0.22 220)' : 'transparent',
-              color: p === page ? '#0a0f1e' : 'rgba(255,255,255,0.4)',
+              color: p === page ? '#0e2a47' : 'rgba(255,255,255,0.4)',
               fontWeight: p === page ? 700 : 400,
             }}
           >
@@ -156,7 +156,7 @@ export default function ThemePage() {
 
   if (!theme) {
     return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#0a0f1e' }}>
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#0e2a47' }}>
         <div className="text-center">
           <p className="text-white/30 mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>Dossier not found.</p>
           <Link href="/">
@@ -170,16 +170,26 @@ export default function ThemePage() {
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#0a0f1e' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#0e2a47' }}>
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/8" style={{ backgroundColor: 'rgba(10,15,30,0.92)' }}>
-        <div className="container flex items-center justify-between h-14">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/10" style={{ backgroundColor: 'rgba(10,35,65,0.95)' }}>
+        <div className="container flex items-center justify-between h-16">
           <Link href="/">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-intel-logo-UzKebTKpPCddRHm4kfyi9V.webp"
-              alt="Westen Intel"
-              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-            />
+            <div className="flex items-center gap-3 cursor-pointer hover:opacity-85 transition-opacity">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13" stroke="#FF6B35" strokeWidth="2"/>
+                <circle cx="16" cy="16" r="7" stroke="#FF6B35" strokeWidth="1.5"/>
+                <circle cx="16" cy="16" r="2.5" fill="#FF6B35"/>
+                <line x1="16" y1="1" x2="16" y2="7" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="16" y1="25" x2="16" y2="31" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="1" y1="16" x2="7" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="25" y1="16" x2="31" y2="16" stroke="#FF6B35" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+              <div className="leading-none">
+                <span className="block text-white font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.35rem', letterSpacing: '0.12em' }}>WESTEN</span>
+                <span className="block font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: '1.1rem', letterSpacing: '0.18em', color: '#FF6B35' }}>INTEL</span>
+              </div>
+            </div>
           </Link>
           <div className="flex items-center gap-6">
             <Link href="/">
@@ -203,10 +213,10 @@ export default function ThemePage() {
           style={{ backgroundImage: `url(${img})` }}
         />
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to top, #0a0f1e 0%, rgba(10,15,30,0.75) 50%, rgba(10,15,30,0.4) 100%)'
+          background: 'linear-gradient(to top, #0a0f1e 0%, rgba(10,35,65,0.75) 50%, rgba(10,35,65,0.4) 100%)'
         }} />
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to right, rgba(10,15,30,0.85) 0%, transparent 60%)'
+          background: 'linear-gradient(to right, rgba(10,35,65,0.85) 0%, transparent 60%)'
         }} />
 
         <div className="container relative z-10 py-12">
@@ -250,7 +260,7 @@ export default function ThemePage() {
       </section>
 
       {/* FILTER BAR */}
-      <section className="sticky top-14 z-40 border-b border-white/8 py-3 backdrop-blur-sm" style={{ backgroundColor: 'rgba(13,18,37,0.97)' }}>
+      <section className="sticky top-14 z-40 border-b border-white/8 py-3 backdrop-blur-sm" style={{ backgroundColor: 'rgba(10,35,65,0.97)' }}>
         <div className="container flex flex-wrap items-center gap-3">
           <div className="relative flex-1 min-w-[200px]">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/25 w-3.5 h-3.5" />
@@ -276,7 +286,7 @@ export default function ThemePage() {
             <Filter size={12} />
             Filter
             {hasFilters && (
-              <span className="ml-1 text-xs w-4 h-4 flex items-center justify-center font-bold" style={{ backgroundColor: 'oklch(0.62 0.22 220)', color: '#0a0f1e' }}>
+              <span className="ml-1 text-xs w-4 h-4 flex items-center justify-center font-bold" style={{ backgroundColor: 'oklch(0.62 0.22 220)', color: '#0e2a47' }}>
                 !
               </span>
             )}
@@ -351,7 +361,7 @@ export default function ThemePage() {
       </section>
 
       {/* OTHER DOSSIERS */}
-      <section className="py-12 border-t border-white/8" style={{ backgroundColor: '#080d1a' }}>
+      <section className="py-12 border-t border-white/8" style={{ backgroundColor: '#081e36' }}>
         <div className="container">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-6 h-px" style={{ backgroundColor: 'oklch(0.65 0.22 38 / 50%)' }} />
@@ -382,16 +392,21 @@ export default function ThemePage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/8 py-6" style={{ backgroundColor: '#080d1a' }}>
-        <div className="container flex items-center justify-between">
+      <footer className="border-t border-white/10 py-10" style={{ backgroundColor: '#081e36' }}>
+        <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link href="/">
-            <span className="text-white/20 text-xs hover:text-white/40 transition-colors" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <span className="text-white/30 text-xs hover:text-white/50 transition-colors" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
               ← Westen Intel
             </span>
           </Link>
-          <p className="text-white/10 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-            Unofficial fan archive. Burn Notice © USA Network.
-          </p>
+          <div className="flex flex-col items-center sm:items-end gap-1">
+            <p className="text-white/40 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Burn Notice, its characters and trademarks are ©USA Network.
+            </p>
+            <p className="text-white/20 text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              Fan site only. Not affiliated with USA Network or Matt Nix Productions.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
