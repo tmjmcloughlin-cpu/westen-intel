@@ -1,5 +1,5 @@
 // Westen Intel — Voiceover data types and helpers
-// Cold War Noir design: data access layer for all 1200+ voiceovers
+// Miami Vice Palette: Navy bg, Coral accent, Teal secondary
 
 import rawData from '../data/voiceovers.json';
 
@@ -22,24 +22,54 @@ export interface ThemeMeta {
   count: number;
 }
 
+// User's custom images
 export const THEME_IMAGES: Record<string, string> = {
-  "Surveillance & Tradecraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-surveillance-6TtjL69sQQJFRcBfbgC2MB.webp",
-  "Improvised Weapons & Gear": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-weapons-bUzpwyVhjaBFZDvkPGfEu4.webp",
-  "Reading People": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-reading-people-4dHLMnbB4wZbcPHaqeVgLM.webp",
-  "Cover Identities": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-cover-fuwDUHySDCadxJdbthkWYT.webp",
-  "Staying Alive": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-reading-people-4dHLMnbB4wZbcPHaqeVgLM.webp",
-  "The Long Con": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-surveillance-6TtjL69sQQJFRcBfbgC2MB.webp",
-  "General Spycraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/theme-weapons-bUzpwyVhjaBFZDvkPGfEu4.webp",
+  "Surveillance & Tradecraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-night_3d87565a.png",
+  "Improvised Weapons & Gear": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-watch_02109c9a.png",
+  "Reading People": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-sunset_2a19fdc0.png",
+  "Cover Identities": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-london_af80924a.png",
+  "Staying Alive": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-night_3d87565a.png",
+  "The Long Con": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-watch_02109c9a.png",
+  "General Spycraft": "https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-miami-sunset_2a19fdc0.png",
 };
 
+// Miami Vice colour scheme per theme
 export const THEME_COLOR_MAP: Record<string, { accent: string; badge: string; border: string }> = {
-  "Surveillance & Tradecraft": { accent: "text-emerald-400", badge: "bg-emerald-900/40 text-emerald-300 border-emerald-700/40", border: "border-emerald-700/30" },
-  "Improvised Weapons & Gear": { accent: "text-orange-400", badge: "bg-orange-900/40 text-orange-300 border-orange-700/40", border: "border-orange-700/30" },
-  "Reading People": { accent: "text-violet-400", badge: "bg-violet-900/40 text-violet-300 border-violet-700/40", border: "border-violet-700/30" },
-  "Cover Identities": { accent: "text-amber-400", badge: "bg-amber-900/40 text-amber-300 border-amber-700/40", border: "border-amber-700/30" },
-  "Staying Alive": { accent: "text-red-400", badge: "bg-red-900/40 text-red-300 border-red-700/40", border: "border-red-700/30" },
-  "The Long Con": { accent: "text-blue-400", badge: "bg-blue-900/40 text-blue-300 border-blue-700/40", border: "border-blue-700/30" },
-  "General Spycraft": { accent: "text-slate-400", badge: "bg-slate-800/60 text-slate-300 border-slate-600/40", border: "border-slate-600/30" },
+  "Surveillance & Tradecraft": {
+    accent: "text-teal-400",
+    badge: "bg-teal-900/30 text-teal-300 border-teal-600/40",
+    border: "border-teal-700/25"
+  },
+  "Improvised Weapons & Gear": {
+    accent: "text-orange-400",
+    badge: "bg-orange-900/30 text-orange-300 border-orange-600/40",
+    border: "border-orange-700/25"
+  },
+  "Reading People": {
+    accent: "text-coral-400",
+    badge: "bg-rose-900/30 text-rose-300 border-rose-600/40",
+    border: "border-rose-700/25"
+  },
+  "Cover Identities": {
+    accent: "text-amber-400",
+    badge: "bg-amber-900/30 text-amber-300 border-amber-600/40",
+    border: "border-amber-700/25"
+  },
+  "Staying Alive": {
+    accent: "text-red-400",
+    badge: "bg-red-900/30 text-red-300 border-red-600/40",
+    border: "border-red-700/25"
+  },
+  "The Long Con": {
+    accent: "text-cyan-400",
+    badge: "bg-cyan-900/30 text-cyan-300 border-cyan-600/40",
+    border: "border-cyan-700/25"
+  },
+  "General Spycraft": {
+    accent: "text-slate-300",
+    badge: "bg-slate-800/50 text-slate-300 border-slate-600/40",
+    border: "border-slate-600/25"
+  },
 };
 
 export const themes: ThemeMeta[] = rawData.themes as ThemeMeta[];
