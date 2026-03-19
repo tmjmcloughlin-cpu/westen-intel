@@ -175,18 +175,23 @@ export default function ThemePage() {
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/8" style={{ backgroundColor: 'rgba(10,15,30,0.92)' }}>
         <div className="container flex items-center justify-between h-14">
           <Link href="/">
-            <div className="flex items-center gap-2 text-white/50 hover:text-white/80 transition-colors">
-              <ArrowLeft size={14} />
-              <span className="text-xs uppercase tracking-widest" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                All Dossiers
-              </span>
-            </div>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-intel-logo-UzKebTKpPCddRHm4kfyi9V.webp"
+              alt="Westen Intel"
+              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+            />
           </Link>
-          <div className="flex items-center gap-3">
-            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.62 0.22 220)' }} />
-            <span className="text-white font-bold tracking-widest text-sm uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em' }}>
-              Westen Intel
-            </span>
+          <div className="flex items-center gap-6">
+            <Link href="/">
+              <span className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/40 hover:text-white/70 transition-colors" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                <ArrowLeft size={12} /> All Dossiers
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span className="text-xs uppercase tracking-widest hover:opacity-80 transition-opacity" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.62 0.22 220)' }}>
+                Contact
+              </span>
+            </Link>
           </div>
         </div>
       </nav>

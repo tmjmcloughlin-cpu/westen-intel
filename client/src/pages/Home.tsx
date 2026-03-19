@@ -227,18 +227,26 @@ export default function Home() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-white/8" style={{ backgroundColor: 'rgba(10,15,30,0.92)' }}>
         <div className="container flex items-center justify-between h-14">
-          <div className="flex items-center gap-3">
-            <div className="w-1 h-6" style={{ backgroundColor: 'oklch(0.62 0.22 220)' }} />
-            <span className="text-white font-bold tracking-widest text-sm uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em' }}>
-              Westen Intel
-            </span>
-          </div>
-          <div className="flex items-center gap-4 text-xs text-white/40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-            <span>{allVoiceovers.length} transmissions</span>
-            <span style={{ color: 'oklch(0.65 0.22 38 / 60%)' }}>·</span>
-            <span>7 seasons</span>
-            <span style={{ color: 'oklch(0.65 0.22 38 / 60%)' }}>·</span>
-            <span>{themes.length} dossiers</span>
+          <Link href="/">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/106735271/NYgra9JPT7Zam4QAikb4pZ/westen-intel-logo-UzKebTKpPCddRHm4kfyi9V.webp"
+              alt="Westen Intel"
+              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+            />
+          </Link>
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 text-xs text-white/40" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+              <span>{allVoiceovers.length} transmissions</span>
+              <span style={{ color: 'oklch(0.62 0.22 220 / 60%)' }}>·</span>
+              <span>7 seasons</span>
+              <span style={{ color: 'oklch(0.62 0.22 220 / 60%)' }}>·</span>
+              <span>{themes.length} dossiers</span>
+            </div>
+            <Link href="/contact">
+              <span className="text-xs uppercase tracking-widest hover:opacity-80 transition-opacity" style={{ fontFamily: "'JetBrains Mono', monospace", color: 'oklch(0.62 0.22 220)' }}>
+                Contact
+              </span>
+            </Link>
           </div>
         </div>
       </nav>
